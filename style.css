@@ -1,12 +1,36 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Google Translate Integration</title>
-    
-    <!-- Custom CSS for Google Translate -->
-    <style>
+/* --- Cài đặt cơ bản cho trang Demo --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* === BẮT ĐẦU: CSS TÙY CHỈNH CHO GOOGLE TRANSLATE === */
         div#\:0\.targetLanguage,
         a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
             display: none;
@@ -48,23 +72,3 @@
                 display: none !important; 
             } 
         }
-    </style>
-</head>
-<body>
-
-    <!-- Google Translate Widget -->
-    <div id="google_translate_element"></div>
-
-    <!-- Google Translate Script -->
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'vi',
-                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-            }, 'google_translate_element');
-        }
-    </script>
-
-</body>
-</html>
