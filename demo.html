@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo - Styled Google Translate Widget</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Cài đặt cơ bản cho trang Demo --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar .logo a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
 
     <header class="navbar">
@@ -14,20 +49,23 @@
             <a href="#">My Website</a>
         </div>
         <div class="language-selector">
-            <div id="google_translate_element"></div>
+            <div id="google_translate_element"></div> <!--Element To Add-->
         </div>
     </header>
 
     <main class="content">
         <h1>Chào mừng bạn đến với trang Demo!</h1>
-        <p>Đây là một ví dụ về cách tích hợp tiện ích Google Dịch đã được tùy chỉnh giao diện vào trang web của bạn. Hãy thử chọn một ngôn ngữ khác từ menu dropdown ở góc trên bên phải.</p>
+        <p>Đây là một ví dụ về cách tích hợp tiện ích Google Dịch đã được tùy chỉnh giao diện vào trang web của bạn. Hãy
+            thử chọn một ngôn ngữ khác từ menu dropdown ở góc trên bên phải.</p>
         <hr>
         <h2>Welcome to the Demo Page!</h2>
-        <p>This is an example of how to integrate the styled Google Translate widget into your website. Try selecting a different language from the dropdown menu in the top-right corner.</p>
+        <p>This is an example of how to integrate the styled Google Translate widget into your website. Try selecting a
+            different language from the dropdown menu in the top-right corner.</p>
     </main>
 
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="text/javascript" src="script.js"></script>
 
 </body>
+
 </html>

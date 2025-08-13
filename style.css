@@ -1,74 +1,78 @@
-/* --- Cài đặt cơ bản cho trang Demo --- */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    margin: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+div#\:0\.targetLanguage,
+a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
 }
 
-.navbar {
-    background-color: #ffffff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+.goog-logo-link {
+  display: none !important;
 }
 
-.navbar .logo a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #2c3e50;
+.goog-te-gadget {
+  height: 100%;
+  color: transparent !important;
 }
 
-.content {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
+select.goog-te-combo {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
 }
 
-/* === BẮT ĐẦU: CSS TÙY CHỈNH CHO GOOGLE TRANSLATE === */
-        div#\:0\.targetLanguage,
-        a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
-            display: none;
-        }
-        .goog-logo-link {
-            display: none !important;
-        }
-        .goog-te-gadget {
-            color: transparent !important;
-        }
-        select.goog-te-combo {
-            width: 100%;
-            border: 1px solid #dcdcdc;
-            padding: 8px;
-        }
-        .skiptranslate:not(.goog-te-gadget) {
-            visibility: hidden !important;
-        }
-        .goog-te-banner-frame.skiptranslate,
-        .VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
-            visibility: hidden !important;
-        }
-        body {
-            top: 0 !important;
-        }
-        .skiptranslate .goog-te-gadget {
-            display: inline;
-        }
-        #google_translate_element {
-            display: inline-block;
-            position: relative;
-            top: 8px;
-        }
-        .nav-item {
-            position: relative;
-        }
-        @media screen and (max-width: 380px) { 
-            #google_translate_element { 
-                display: none !important; 
-            } 
-        }
+.skiptranslate:not(.goog-te-gadget) {
+  visibility: hidden !important;
+}
+
+.goog-te-banner-frame.skiptranslate,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+  visibility: hidden !important;
+}
+
+.skiptranslate .goog-te-gadget {
+  display: inline;
+}
+
+#google_translate_element {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  /* top: 8px; */
+}
+
+.nav-item {
+  position: relative;
+}
+
+#\:0\.targetLanguage {
+  display: inline-block !important;
+  height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  #google_translate_element {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  select.goog-te-combo {
+    width: 100% !important;
+  }
+
+  .goog-te-combo {
+    height: 100% !important;
+    appearance: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: url('https://raw.githubusercontent.com/CodeWithKhoa/Styled-Google-Translate-Widget/main/images/translate.png') no-repeat center;
+    background-color: transparent !important;
+    background-size: 20px 20px;
+    text-indent: -9999px;
+
+    height: 35px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0px !important;
+  }
+}
